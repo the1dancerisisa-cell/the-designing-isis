@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Designing Isis</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6ff;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff4fd8, #6a5cff, #3cc6ff);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #6a5cff;
+    }
+
+    /* SERVICES */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .box {
+      background: linear-gradient(135deg, #ffe0f7, #e0e8ff);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* PRICING */
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .price-card {
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      background: #f3f3ff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff4fd8;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 12px 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #ff4fd8, #6a5cff, #3cc6ff);
+      color: white;
+    }
+
+    /* CONTACT */
+    .contact-box {
+      background: #f3f3ff;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Designing Isis</h1>
+  <p>Modern websites for small businesses that want to grow online</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hi, I’m Isis. I design clean, modern, and affordable websites for small businesses.
+    My goal is to help businesses look professional online and attract more customers.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+
+  <div class="grid">
+    <div class="box">Business Websites</div>
+    <div class="box">Portfolio Websites</div>
+    <div class="box">Landing Pages</div>
+    <div class="box">Website Redesigns</div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <h2>Pricing</h2>
+
+  <div class="pricing">
+
+    <div class="price-card">
+      <h3>Basic</h3>
+      <p class="price">$50</p>
+      <p>1-page website</p>
+      <p>Contact section</p>
+      <p>Basic design</p>
+      <button class="btn">Choose Basic</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Standard</h3>
+      <p class="price">$120</p>
+      <p>3–5 pages</p>
+      <p>Mobile friendly</p>
+      <p>Better design + layout</p>
+      <button class="btn">Most Popular</button>
+    </div>
+
+    <div class="price-card">
+      <h3>Premium</h3>
+      <p class="price">$250</p>
+      <p>Full business website</p>
+      <p>Custom design</p>
+      <p>Priority delivery</p>
+      <button class="btn">Go Premium</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact / Book a Website</h2>
+
+  <div class="contact-box">
+    <strong>Email:</strong><br>
+    isisalexanderz3@gmail.com
+  </div>
+
+  <div class="contact-box">
+    <strong>Main Phone:</strong><br>
+    904-893-1128
+  </div>
+
+  <div class="contact-box">
+    <strong>Assistant Phone:</strong><br>
+    347-216-8224
+  </div>
+
+  <h3>Send a Message</h3>
+
+  <form>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea rows="5" placeholder="Tell me about your website idea..."></textarea><br>
+
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+
+  <br>
+
+  <button class="btn">
+    Book a Website With Me
+  </button>
+</section>
+
+<footer>
+  © 2026 The Designing Isis. All rights reserved.
+</footer>
+
+</body>
+</html>
